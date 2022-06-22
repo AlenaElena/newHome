@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewHome details-page</title>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <a href="#" class="header__logo">
+            <img src="images/Logo.png" alt="" />
+          </a>
+          <div class="header__content">
+            <form
+              class="header__form"
+              action="https://jsonplaceholder.typicode.com/users"
+              autocomplete
+              method="post"
+            >
+              <input
+                type="text"
+                class="header__form-input"
+                name="search"
+                placeholder="Пошук..."
+              />
+              <button class="header__form-btn" type="submit">Пошук</button>
+            </form>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="index.html" class="header__menu-link">Головна</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="construction.html" class="header__menu-link"
+                    >Будівництво</a
+                  >
+
+                  <ul class="header__submenu">
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Квартал Парковий"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Київський"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a
+                        href="construction.html"
+                        class="header__submenu-link header__submenu-link--active"
+                      >
+                        ЖК "Садовий"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link"> ЖК "Вектор" </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Перспектива"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Перспектива Хол"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link"> ЖК "Тріумф" </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header__menu-item">
+                  <a
+                    href="real-estate.html"
+                    class="header__menu-link header__menu-link--active"
+                    >Комерційна нерухомість</a
+                  >
+                  <ul class="header__submenu">
+                    <li class="header__submenu-item">
+                      <a
+                        href="real-estate.html"
+                        class="header__submenu-link header__submenu-link--active"
+                      >
+                        Комерцiйна нерухомiсть
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        Житлова Нерухомicть
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link"> ЖК "Вектор" </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Перспектива"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Перспектива Хол"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link"> ЖК "Тріумф" </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Пурпурові вітрила"
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Агенство нерухомості</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Про нас</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Контакти</a>
+                </li>
+              </ul>
+              <button class="header__menu-close"></button>
+            </nav>
+            <button class="burger-btn">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="intro intro--details">
+        <div class="intro__top">
+          <div class="container">
+            <h2 class="intro__top-title">Комерцiйна Нерухомiсть</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="features features--details">
+        <div class="container">
+          <div class="features__cols">
+            <div class="features__col features__col--plan">
+              <div class="features__item features__item--details popup-item">
+                <h5 class="features__item-title">
+                  Житлова нерухомість План типового поверху
+                </h5>
+                <img
+                  class="features__item-img"
+                  src="images/plans/plan-details-1.png"
+                  alt=""
+                />
+
+                <ul class="features__item-list">
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >двокімнатні - 63,10 м<span class="pow">2</span></span
+                    >
+                  </li>
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >трикімнатні - - 87,10 м<span class="pow">2</span></span
+                    >
+                  </li>
+                </ul>
+                <div class="features__item-popup popup-open">
+                  <a href="#" class="features__item-popup__link search-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="20"
+                      viewBox="0 0 19 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        fill="#353940"
+                        d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                        transform="translate(-880 -3562)"
+                      />
+                    </svg>
+                  </a>
+                  <div class="features__item-popup__text popup-open__text">
+                    збільшити
+                  </div>
+                </div>
+                <div class="popup">
+                  <div class="popup__body">
+                    <div class="popup__content">
+                      <img
+                        class="features__item-img"
+                        src="images/plans/plan-details-1.png"
+                        alt=""
+                      />
+                      <a href="#" class="popup-close">
+                        <img src="images/icon/close-black.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="features__item features__item--details popup-item">
+                <h5 class="features__item-title">
+                  Комерційна нерухомість План цокольного поверху
+                </h5>
+                <img
+                  class="features__item-img"
+                  src="images/plans/plan-details-2.png"
+                  alt=""
+                />
+                <ul class="features__item-list">
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >Комерційне приміщення - 159,8 м<span class="pow"
+                        >2</span
+                      ></span
+                    >
+                  </li>
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >Комерційне приміщення - 93,5 м<span class="pow"
+                        >2</span
+                      ></span
+                    >
+                  </li>
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >Загальна площа поверху - 223,3 м<span class="pow"
+                        >2</span
+                      ></span
+                    >
+                  </li>
+                </ul>
+                <div class="features__item-popup popup-open">
+                  <a href="#" class="features__item-popup__link search-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="20"
+                      viewBox="0 0 19 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        fill="#353940"
+                        d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                        transform="translate(-880 -3562)"
+                      />
+                    </svg>
+                  </a>
+                  <div class="features__item-popup__text popup-open__text">
+                    збільшити
+                  </div>
+                </div>
+                <div class="popup">
+                  <div class="popup__body">
+                    <div class="popup__content">
+                      <img
+                        class="features__item-img"
+                        src="images/plans/plan-details-2.png"
+                        alt=""
+                      />
+                      <a href="#" class="popup-close">
+                        <img src="images/icon/close-black.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="features__item features__item--details popup-item">
+                <h5 class="features__item-title">
+                  Комерційна нерухомість План першого поверху
+                </h5>
+                <img
+                  class="features__item-img"
+                  src="images/plans/plan-details-3.png"
+                  alt=""
+                />
+                <ul class="features__item-list">
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >Комерційне приміщення - 141,3 м<span class="pow"
+                        >2</span
+                      ></span
+                    >
+                  </li>
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >Комерційне приміщення - 97,7 м<span class="pow"
+                        >2</span
+                      ></span
+                    >
+                  </li>
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >Загальна площа поверху - 239 м<span class="pow"
+                        >2</span
+                      ></span
+                    >
+                  </li>
+                </ul>
+                <div class="features__item-popup popup-open">
+                  <a href="#" class="features__item-popup__link search-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="20"
+                      viewBox="0 0 19 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        fill="#353940"
+                        d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                        transform="translate(-880 -3562)"
+                      />
+                    </svg>
+                  </a>
+                  <div class="features__item-popup__text popup-open__text">
+                    збільшити
+                  </div>
+                </div>
+                <div class="popup">
+                  <div class="popup__body">
+                    <div class="popup__content">
+                      <img
+                        class="features__item-img"
+                        src="images/plans/plan-details-3.png"
+                        alt=""
+                      />
+                      <a href="#" class="popup-close">
+                        <img src="images/icon/close-black.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="features__item features__item--details popup-item">
+                <h5 class="features__item-title">
+                  Комерційна нерухомість План першого поверху
+                </h5>
+                <img
+                  class="features__item-img"
+                  src="images/plans/plan-details-4.png"
+                  alt=""
+                />
+                <ul class="features__item-list">
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >Комерційне приміщення - 127,4 м<span class="pow"
+                        >2</span
+                      ></span
+                    >
+                  </li>
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >Комерційне приміщення - 97,7 м<span class="pow"
+                        >2</span
+                      ></span
+                    >
+                  </li>
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >Загальна площа поверху - 225,5 м<span class="pow"
+                        >2</span
+                      ></span
+                    >
+                  </li>
+                </ul>
+                <div class="features__item-popup popup-open">
+                  <a href="#" class="features__item-popup__link search-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="20"
+                      viewBox="0 0 19 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        fill="#353940"
+                        d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                        transform="translate(-880 -3562)"
+                      />
+                    </svg>
+                  </a>
+                  <div class="features__item-popup__text popup-open__text">
+                    збільшити
+                  </div>
+                </div>
+                <div class="popup">
+                  <div class="popup__body">
+                    <div class="popup__content">
+                      <img
+                        class="features__item-img"
+                        src="images/plans/plan-details-4.png"
+                        alt=""
+                      />
+                      <a href="#" class="popup-close">
+                        <img src="images/icon/close-black.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="features__col features__col--info">
+              <div class="features__item features__item--details">
+                <h3 class="features__item-heading">
+                  Житловий Комплекс "Перспектива Хол"
+                </h3>
+                <h6 class="features__item-subtitle">
+                  м. Івано-Франківськ, вул. Зілізнична, 49
+                </h6>
+                <p class="features__item-text">
+                  Житловий комплекс "Перспектива Хол"- це восьмиповерховий
+                  будинок, з видом на паркову алею та закритим внутрішнім
+                  дворовим комплексом – дитячим майданчиком та місцями для
+                  парковки. В комплексі 18 квартир покращеного планування.
+                  Всього 2 типи двохкімнатних квартир площею від 63,10 м2 до
+                  70,2м2. та 1 тип трьохкімнатних квартир площею від 87,10м2 до
+                  90,2м2.
+                </p>
+              </div>
+
+              <div class="features__item-grid features__item--details">
+                <div class="features__item-grid__wrap popup-item">
+                  <img src="images/card-img/card-details-1.jpg" alt="" />
+
+                  <a href="#" class="popup-open search-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="20"
+                      viewBox="0 0 19 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        fill="#353940"
+                        d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                        transform="translate(-880 -3562)"
+                      />
+                    </svg>
+                  </a>
+                  <div class="popup">
+                    <div class="popup__body">
+                      <div class="popup__content">
+                        <img src="images/card-img/card-details-1.jpg" alt="" />
+                        <a href="#" class="popup-close">
+                          <img src="images/icon/close-black.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="features__item-grid__wrap popup-item">
+                  <img src="images/card-img/card-details-2.jpg" alt="" />
+
+                  <a href="#" class="popup-open search-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="20"
+                      viewBox="0 0 19 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        fill="#353940"
+                        d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                        transform="translate(-880 -3562)"
+                      />
+                    </svg>
+                  </a>
+                  <div class="popup">
+                    <div class="popup__body">
+                      <div class="popup__content">
+                        <img src="images/card-img/card-details-2.jpg" alt="" />
+                        <a href="#" class="popup-close">
+                          <img src="images/icon/close-black.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="features__item-grid__wrap popup-item">
+                  <img src="images/card-img/card-details-3.jpg" alt="" />
+
+                  <a href="#" class="popup-open search-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="20"
+                      viewBox="0 0 19 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        fill="#353940"
+                        d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                        transform="translate(-880 -3562)"
+                      />
+                    </svg>
+                  </a>
+                  <div class="popup">
+                    <div class="popup__body">
+                      <div class="popup__content">
+                        <img src="images/card-img/card-details-3.jpg" alt="" />
+                        <a href="#" class="popup-close">
+                          <img src="images/icon/close-black.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="features__item-grid__wrap popup-item">
+                  <img src="images/card-img/card-details-4.jpg" alt="" />
+
+                  <a href="#" class="popup-open search-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="20"
+                      viewBox="0 0 19 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        fill="#353940"
+                        d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                        transform="translate(-880 -3562)"
+                      />
+                    </svg>
+                  </a>
+                  <div class="popup">
+                    <div class="popup__body">
+                      <div class="popup__content">
+                        <img src="images/card-img/card-details-4.jpg" alt="" />
+                        <a href="#" class="popup-close">
+                          <img src="images/icon/close-black.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="features__item-grid__wrap popup-item">
+                  <img src="images/card-img/card-details-5.jpg" alt="" />
+
+                  <a href="#" class="popup-open search-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="20"
+                      viewBox="0 0 19 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        fill="#353940"
+                        d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                        transform="translate(-880 -3562)"
+                      />
+                    </svg>
+                  </a>
+                  <div class="popup">
+                    <div class="popup__body">
+                      <div class="popup__content">
+                        <img src="images/card-img/card-details-5.jpg" alt="" />
+                        <a href="#" class="popup-close">
+                          <img src="images/icon/close-black.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="features__item-grid__wrap popup-item">
+                  <img src="images/card-img/card-details-6.jpg" alt="" />
+
+                  <a href="#" class="popup-open search-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="20"
+                      viewBox="0 0 19 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        fill="#353940"
+                        d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                        transform="translate(-880 -3562)"
+                      />
+                    </svg>
+                  </a>
+                  <div class="popup">
+                    <div class="popup__body">
+                      <div class="popup__content">
+                        <img src="images/card-img/card-details-6.jpg" alt="" />
+                        <a href="#" class="popup-close">
+                          <img src="images/icon/close-black.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="features__item features__item--details">
+                <h5 class="features__item-top">
+                  ПЕРЕВАГИ ЖК "Перспектива Хол"
+                </h5>
+                <p class="features__item-text">
+                  Житловий комплекс збудовано з високоякісних сертифікованих
+                  матеріалів з жорстким дотриманням будівельних норм та
+                  технологічних процесів. В будинок заведено кабельне
+                  телебачення, інтернет та можливість під'єднатися до міського
+                  телефонного зв'язку
+                </p>
+              </div>
+              <div class="features__item features__item--details">
+                <h5 class="features__item-top">
+                  ОСНОВНІ ХАРАКТЕРИСТИКИ КВАРТИР:
+                </h5>
+                <p class="features__item-text">
+                  Високоякісна штукатурка стін; Стяжка підлоги – готова під
+                  укладання паркету, ламінату; Опалення – індивідуальне в кожній
+                  квартирі; Міська каналізація та водопостачання – змонтовано
+                  стояки, труби пластикові; В кожній квартирі встановлено
+                  лічильники води, газу та електроенергії.
+                </p>
+              </div>
+              <div class="features__item features__item--details">
+                <h5 class="features__item-top">
+                  ОСНОВНІ ХАРАКТЕРИСТИКИ БУДИНКУ:
+                </h5>
+                <p class="features__item-text">
+                  Фундамент – збірний залізобетон; Стіни – червона керамічна
+                  цегла М-125; Утеплювач – комбінована система
+                  пінополістирольних та мінеральних плит товщиною 100мм., що
+                  покращує теплоізоляційні властивості та пожежостійкість
+                  будинку; Дах – шатровий, з покриттям металочерепицею; Вікна –
+                  пятикамерний віконний профіль та двокамерне скло; Двері -
+                  сертифіковані броньовані вітчизняного виробництва з двома
+                  замками; Ліфт - Izamet болгарського виробництва прохідні на
+                  400 кг. (для
+                </p>
+              </div>
+              <div class="features__item features__item--details">
+                <h5 class="features__item-top">Інфраструктура Поблизу</h5>
+                <ul class="features__item-list">
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >Зупинка міського транспорту - 100 м</span
+                    >
+                  </li>
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >Супермаркет "Вопак" - 250 м</span
+                    >
+                  </li>
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >Дитячий садочок №14 - 350 м</span
+                    >
+                  </li>
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >Школа №3 - 800 м
+                    </span>
+                  </li>
+                  <li class="features__item-index">
+                    <span class="features__item-index__title"
+                      >Ринок "Центральний" - 950 м</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </section>
+
+      <section class="video video--details">
+        <div class="container">
+          <div class="video__block">
+            <img src="images/video-block-constr.jpg" alt="" />
+            <!-- <iframe
+              src="https://www.youtube.com/embed/8shiUMfwkK8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <h3 class="footer__title">Контактна Інформація</h3>
+        <div class="footer__content">
+          <div class="footer__content-item">
+            <a
+              href="#"
+              class="footer__content-info footer__content-info--address"
+              >08292 м.Буча, вул. Катерини Білокур 1-а. оф.1.</a
+            >
+            <div class="footer__content-info footer__content-info--num">
+              <a href="#" class="footer__content-phone">(067) 72-98-66</a>
+              <a href="#" class="footer__content-phone">(0342) 72-98-66</a>
+            </div>
+            <a href="#" class="footer__content-info footer__content-info--email"
+              >noviydim@gmail.com</a
+            >
+          </div>
+          <div class="footer__content-item">
+            <a
+              href="#"
+              class="footer__content-info footer__content-info--address"
+              >м.Обухів, територія мікрорайону №3</a
+            >
+            <div class="footer__content-info footer__content-info--num">
+              <a href="#" class="footer__content-phone">(067) 72-98-66</a>
+            </div>
+            <a href="#" class="footer__content-info footer__content-info--email"
+              >noviydim@gmail.com</a
+            >
+          </div>
+          <div class="footer__content-item">
+            <a
+              href="#"
+              class="footer__content-info footer__content-info--address"
+              >м. Івано-франківськ, вул. Мазепи, 35.</a
+            >
+            <div class="footer__content-info footer__content-info--num">
+              <a href="#" class="footer__content-phone">(050) 432-27-27</a>
+              <a href="#" class="footer__content-phone">(096) 432-27-27</a>
+            </div>
+            <a href="#" class="footer__content-info footer__content-info--email"
+              >noviydim@gmail.com</a
+            >
+          </div>
+        </div>
+
+        <div class="footer__copyright">
+          <a href="#" class="footer__copyright-logo">
+            <img src="images/Logo-footer.png" alt="" />
+          </a>
+          <div class="footer__copyright-text">
+            <span>Новий Дім</span> © 2016 | Усі Права Захищені.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
