@@ -36,9 +36,7 @@
                   <a href="index.html" class="header__menu-link">Головна</a>
                 </li>
                 <li class="header__menu-item">
-                  <a
-                    href="#"
-                    class="header__menu-link header__menu-link--active"
+                  <a href="construction.html" class="header__menu-link"
                     >Будівництво</a
                   >
 
@@ -122,7 +120,11 @@
                   </ul>
                 </li>
                 <li class="header__menu-item">
-                  <a href="#" class="header__menu-link">Агенство нерухомості</a>
+                  <a
+                    href="#"
+                    class="header__menu-link header__menu-link--active"
+                    >Агенство нерухомості</a
+                  >
                 </li>
                 <li class="header__menu-item">
                   <a href="#" class="header__menu-link">Про нас</a>
@@ -152,7 +154,7 @@
       <section class="gallery">
         <div class="container">
           <div class="gallery__items">
-            <div class="gallery__item">
+            <div class="gallery__item popup-item">
               <div class="gallery__item-slider">
                 <div class="swiper mySwiper2 gallery-slider__big">
                   <div class="swiper-wrapper">
@@ -176,7 +178,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div thumbsSlider="" class="swiper gallery-slider__small">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide gallery-slider__small-slide">
@@ -207,96 +208,77 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="gallery__item-content">
-                <h6 class="gallery__item-content__subtitle">
-                  Комерційне приміщення:
-                </h6>
-                <h3 class="gallery__item-content__title">
-                  Комерційна Пропозиція М. Івано-Франківськ
-                </h3>
-                <h6 class="gallery__item-content__price">
-                  Вартість приміщення: <span class="cost">$350 000</span>
-                </h6>
-                <h6 class="gallery__item-content__price">
-                  Вартість оренди: <span class="green">200 грн. / 1м2</span>
-                  <span class="grey">+комунальні послуги .</span>
-                </h6>
-                <h6 class="gallery__item-content__phone">
-                  (0342) 72-98-66, (067) 342-26-68
-                </h6>
-                <p class="gallery__item-content__text">
-                  Продається або здається в оренду офіс в центральній частині
-                  міста по вул. Мазепи 35 в новобудові з чудовим панорамним
-                  виглядом на м. Івано-Франківськ. Площа 209.6 м2 розташований
-                  на 11-тому поверсі є окремий вхід та власний ліфт до офісу, а
-                  також до загальної площі додається гаражний бокс площою 23м2.
-                  Зроблено ремонт в стилі LOFT. Приміщення має сім кабінетів та
-                  приймальню, окремо санвузол та кухню. Поруч розгалужена
-                  інфраструктура міста: магазини, школи, дитсатки, зручне
-                  транспортне сполучення. На території будинку є власна
-                  парковка. Приміщення з вітражними вікнами та двома великими
-                  терасами площею 27,9м2 та 28 м2 з яких видно мальовничі
-                  пейзажі міського озера так і ратушу.
-                </p>
-              </div>
-            </div>
 
-            <!-- <div class="gallery__item">
-              <div class="gallery__item-slider">
-                <div class="swiper mySwiper2 gallery-slider__big">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide gallery-slider__big-slide">
-                      <img src="images/slider-agency/agency-slider-1.jpg" />
-                    </div>
-                    <div class="swiper-slide gallery-slider__big-slide">
-                      <img src="images/slider-agency/agency-slider-2.jpg" />
-                    </div>
-                    <div class="swiper-slide gallery-slider__big-slide">
-                      <img src="images/slider-agency/agency-slider-3.jpg" />
-                    </div>
-                    <div class="swiper-slide gallery-slider__big-slide">
-                      <img src="images/slider-agency/agency-slider-4.jpg" />
-                    </div>
-                    <div class="swiper-slide gallery-slider__big-slide">
-                      <img src="images/slider-agency/card-slider-big-1.jpg" />
-                    </div>
-                    <div class="swiper-slide gallery-slider__big-slide">
-                      <img src="images/slider-agency/card-slider-big-2.jpg" />
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-button gallery-slider__button">
-                  <div class="gallery-slider__button-next">
-                    <img src="images/icon/angle-right.svg" alt="" />
-                  </div>
-                  <div class="gallery-slider__button-prev">
-                    <img src="images/icon/angle-left.svg" alt="" />
-                  </div>
-                </div>
-                <div thumbsSlider="" class="swiper gallery-slider__small">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide gallery-slider__small-slide">
-                      <img src="images/slider-agency/agency-slider-1.jpg" />
-                    </div>
-                    <div class="swiper-slide gallery-slider__small-slide">
-                      <img src="images/slider-agency/agency-slider-2.jpg" />
-                    </div>
-                    <div class="swiper-slide gallery-slider__small-slide">
-                      <img src="images/slider-agency/agency-slider-3.jpg" />
-                    </div>
-                    <div class="swiper-slide gallery-slider__small-slide">
-                      <img src="images/slider-agency/agency-slider-4.jpg" />
-                    </div>
-                    <div class="swiper-slide gallery-slider__small-slide">
-                      <img src="images/slider-agency/card-slider-big-1.jpg" />
-                    </div>
-                    <div class="swiper-slide gallery-slider__small-slide">
-                      <img src="images/slider-agency/card-slider-big-2.jpg" />
+                <a
+                  class="gallery__item-slider__popup-open popup-open search-btn"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="20"
+                    viewBox="0 0 19 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      fill="#353940"
+                      d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                      transform="translate(-880 -3562)"
+                    />
+                  </svg>
+                </a>
+                <div class="popup">
+                  <div class="popup__body">
+                    <div class="popup__content">
+                      <div class="slider">
+                        <div class="slider-modal__wrap">
+                          <div class="swiper-container slider-modal">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-1.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-2.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-3.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-4.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/card-slider-big-1.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/card-slider-big-2.jpg"
+                                />
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                        </div>
+                      </div>
+                      <a href="#" class="popup-close">
+                        <img src="images/icon/close-black.svg" alt="" />
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
+
               <div class="gallery__item-content">
                 <h6 class="gallery__item-content__subtitle">
                   Комерційне приміщення:
@@ -330,7 +312,7 @@
                 </p>
               </div>
             </div>
-            <div class="gallery__item">
+            <div class="gallery__item popup-item">
               <div class="gallery__item-slider">
                 <div class="swiper mySwiper2 gallery-slider__big">
                   <div class="swiper-wrapper">
@@ -354,14 +336,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-button gallery-slider__button">
-                  <div class="gallery-slider__button-next">
-                    <img src="images/icon/angle-right.svg" alt="" />
-                  </div>
-                  <div class="gallery-slider__button-prev">
-                    <img src="images/icon/angle-left.svg" alt="" />
-                  </div>
-                </div>
                 <div thumbsSlider="" class="swiper gallery-slider__small">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide gallery-slider__small-slide">
@@ -383,8 +357,86 @@
                       <img src="images/slider-agency/card-slider-big-2.jpg" />
                     </div>
                   </div>
+                  <div class="swiper-button gallery-slider__button">
+                    <div class="gallery-slider__button-next">
+                      <img src="images/icon/angle-right.svg" alt="" />
+                    </div>
+                    <div class="gallery-slider__button-prev">
+                      <img src="images/icon/angle-left.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  class="gallery__item-slider__popup-open popup-open search-btn"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="20"
+                    viewBox="0 0 19 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      fill="#353940"
+                      d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                      transform="translate(-880 -3562)"
+                    />
+                  </svg>
+                </a>
+                <div class="popup">
+                  <div class="popup__body">
+                    <div class="popup__content">
+                      <div class="slider">
+                        <div class="slider-modal__wrap">
+                          <div class="swiper-container slider-modal">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-1.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-2.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-3.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-4.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/card-slider-big-1.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/card-slider-big-2.jpg"
+                                />
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                        </div>
+                      </div>
+                      <a href="#" class="popup-close">
+                        <img src="images/icon/close-black.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
+
               <div class="gallery__item-content">
                 <h6 class="gallery__item-content__subtitle">
                   Комерційне приміщення:
@@ -418,7 +470,7 @@
                 </p>
               </div>
             </div>
-            <div class="gallery__item">
+            <div class="gallery__item popup-item">
               <div class="gallery__item-slider">
                 <div class="swiper mySwiper2 gallery-slider__big">
                   <div class="swiper-wrapper">
@@ -442,14 +494,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-button gallery-slider__button">
-                  <div class="gallery-slider__button-next">
-                    <img src="images/icon/angle-right.svg" alt="" />
-                  </div>
-                  <div class="gallery-slider__button-prev">
-                    <img src="images/icon/angle-left.svg" alt="" />
-                  </div>
-                </div>
                 <div thumbsSlider="" class="swiper gallery-slider__small">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide gallery-slider__small-slide">
@@ -471,8 +515,86 @@
                       <img src="images/slider-agency/card-slider-big-2.jpg" />
                     </div>
                   </div>
+                  <div class="swiper-button gallery-slider__button">
+                    <div class="gallery-slider__button-next">
+                      <img src="images/icon/angle-right.svg" alt="" />
+                    </div>
+                    <div class="gallery-slider__button-prev">
+                      <img src="images/icon/angle-left.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  class="gallery__item-slider__popup-open popup-open search-btn"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="20"
+                    viewBox="0 0 19 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      fill="#353940"
+                      d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                      transform="translate(-880 -3562)"
+                    />
+                  </svg>
+                </a>
+                <div class="popup">
+                  <div class="popup__body">
+                    <div class="popup__content">
+                      <div class="slider">
+                        <div class="slider-modal__wrap">
+                          <div class="swiper-container slider-modal">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-1.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-2.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-3.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-4.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/card-slider-big-1.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/card-slider-big-2.jpg"
+                                />
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                        </div>
+                      </div>
+                      <a href="#" class="popup-close">
+                        <img src="images/icon/close-black.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
+
               <div class="gallery__item-content">
                 <h6 class="gallery__item-content__subtitle">
                   Комерційне приміщення:
@@ -505,66 +627,327 @@
                   пейзажі міського озера так і ратушу.
                 </p>
               </div>
-            </div> -->
+            </div>
+            <div class="gallery__item popup-item">
+              <div class="gallery__item-slider">
+                <div class="swiper mySwiper2 gallery-slider__big">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery-slider__big-slide">
+                      <img src="images/slider-agency/agency-slider-1.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__big-slide">
+                      <img src="images/slider-agency/agency-slider-2.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__big-slide">
+                      <img src="images/slider-agency/agency-slider-3.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__big-slide">
+                      <img src="images/slider-agency/agency-slider-4.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__big-slide">
+                      <img src="images/slider-agency/card-slider-big-1.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__big-slide">
+                      <img src="images/slider-agency/card-slider-big-2.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <div thumbsSlider="" class="swiper gallery-slider__small">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery-slider__small-slide">
+                      <img src="images/slider-agency/agency-slider-1.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__small-slide">
+                      <img src="images/slider-agency/agency-slider-2.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__small-slide">
+                      <img src="images/slider-agency/agency-slider-3.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__small-slide">
+                      <img src="images/slider-agency/agency-slider-4.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__small-slide">
+                      <img src="images/slider-agency/card-slider-big-1.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__small-slide">
+                      <img src="images/slider-agency/card-slider-big-2.jpg" />
+                    </div>
+                  </div>
+                  <div class="swiper-button gallery-slider__button">
+                    <div class="gallery-slider__button-next">
+                      <img src="images/icon/angle-right.svg" alt="" />
+                    </div>
+                    <div class="gallery-slider__button-prev">
+                      <img src="images/icon/angle-left.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  class="gallery__item-slider__popup-open popup-open search-btn"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="20"
+                    viewBox="0 0 19 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      fill="#353940"
+                      d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                      transform="translate(-880 -3562)"
+                    />
+                  </svg>
+                </a>
+                <div class="popup">
+                  <div class="popup__body">
+                    <div class="popup__content">
+                      <div class="slider">
+                        <div class="slider-modal__wrap">
+                          <div class="swiper-container slider-modal">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-1.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-2.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-3.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-4.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/card-slider-big-1.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/card-slider-big-2.jpg"
+                                />
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                        </div>
+                      </div>
+                      <a href="#" class="popup-close">
+                        <img src="images/icon/close-black.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery__item-content">
+                <h6 class="gallery__item-content__subtitle">
+                  Комерційне приміщення:
+                </h6>
+                <h3 class="gallery__item-content__title">
+                  Комерційна Пропозиція М. Івано-Франківськ
+                </h3>
+                <h6 class="gallery__item-content__price">
+                  Вартість приміщення: <span class="cost">$350 000</span>
+                </h6>
+                <h6 class="gallery__item-content__price">
+                  Вартість оренди: <span class="green">200 грн. / 1м2</span>
+                  <span class="grey">+комунальні послуги .</span>
+                </h6>
+                <h6 class="gallery__item-content__phone">
+                  (0342) 72-98-66, (067) 342-26-68
+                </h6>
+                <p class="gallery__item-content__text">
+                  Продається або здається в оренду офіс в центральній частині
+                  міста по вул. Мазепи 35 в новобудові з чудовим панорамним
+                  виглядом на м. Івано-Франківськ. Площа 209.6 м2 розташований
+                  на 11-тому поверсі є окремий вхід та власний ліфт до офісу, а
+                  також до загальної площі додається гаражний бокс площою 23м2.
+                  Зроблено ремонт в стилі LOFT. Приміщення має сім кабінетів та
+                  приймальню, окремо санвузол та кухню. Поруч розгалужена
+                  інфраструктура міста: магазини, школи, дитсатки, зручне
+                  транспортне сполучення. На території будинку є власна
+                  парковка. Приміщення з вітражними вікнами та двома великими
+                  терасами площею 27,9м2 та 28 м2 з яких видно мальовничі
+                  пейзажі міського озера так і ратушу.
+                </p>
+              </div>
+            </div>
+            <div class="gallery__item popup-item">
+              <div class="gallery__item-slider">
+                <div class="swiper mySwiper2 gallery-slider__big">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery-slider__big-slide">
+                      <img src="images/slider-agency/agency-slider-1.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__big-slide">
+                      <img src="images/slider-agency/agency-slider-2.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__big-slide">
+                      <img src="images/slider-agency/agency-slider-3.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__big-slide">
+                      <img src="images/slider-agency/agency-slider-4.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__big-slide">
+                      <img src="images/slider-agency/card-slider-big-1.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__big-slide">
+                      <img src="images/slider-agency/card-slider-big-2.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <div thumbsSlider="" class="swiper gallery-slider__small">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery-slider__small-slide">
+                      <img src="images/slider-agency/agency-slider-1.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__small-slide">
+                      <img src="images/slider-agency/agency-slider-2.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__small-slide">
+                      <img src="images/slider-agency/agency-slider-3.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__small-slide">
+                      <img src="images/slider-agency/agency-slider-4.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__small-slide">
+                      <img src="images/slider-agency/card-slider-big-1.jpg" />
+                    </div>
+                    <div class="swiper-slide gallery-slider__small-slide">
+                      <img src="images/slider-agency/card-slider-big-2.jpg" />
+                    </div>
+                  </div>
+                  <div class="swiper-button gallery-slider__button">
+                    <div class="gallery-slider__button-next">
+                      <img src="images/icon/angle-right.svg" alt="" />
+                    </div>
+                    <div class="gallery-slider__button-prev">
+                      <img src="images/icon/angle-left.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  class="gallery__item-slider__popup-open popup-open search-btn"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="20"
+                    viewBox="0 0 19 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      fill="#353940"
+                      d="M898.709,3580.22l-4.681-4.95a8.153,8.153,0,0,0,1.863-5.19,7.944,7.944,0,1,0-7.944,8.07,7.746,7.746,0,0,0,4.551-1.46l4.718,4.99a1.032,1.032,0,0,0,1.464.03,1.067,1.067,0,0,0,.029-1.49h0Zm-10.762-16.11a5.971,5.971,0,1,1-5.869,5.97,5.923,5.923,0,0,1,5.869-5.97h0Zm0,0"
+                      transform="translate(-880 -3562)"
+                    />
+                  </svg>
+                </a>
+                <div class="popup">
+                  <div class="popup__body">
+                    <div class="popup__content">
+                      <div class="slider">
+                        <div class="slider-modal__wrap">
+                          <div class="swiper-container slider-modal">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-1.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-2.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-3.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/agency-slider-4.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/card-slider-big-1.jpg"
+                                />
+                              </div>
+                              <div class="swiper-slide slider-modal__slide">
+                                <img
+                                  src="images/slider-agency/card-slider-big-2.jpg"
+                                />
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                        </div>
+                      </div>
+                      <a href="#" class="popup-close">
+                        <img src="images/icon/close-black.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery__item-content">
+                <h6 class="gallery__item-content__subtitle">
+                  Комерційне приміщення:
+                </h6>
+                <h3 class="gallery__item-content__title">
+                  Комерційна Пропозиція М. Івано-Франківськ
+                </h3>
+                <h6 class="gallery__item-content__price">
+                  Вартість приміщення: <span class="cost">$350 000</span>
+                </h6>
+                <h6 class="gallery__item-content__price">
+                  Вартість оренди: <span class="green">200 грн. / 1м2</span>
+                  <span class="grey">+комунальні послуги .</span>
+                </h6>
+                <h6 class="gallery__item-content__phone">
+                  (0342) 72-98-66, (067) 342-26-68
+                </h6>
+                <p class="gallery__item-content__text">
+                  Продається або здається в оренду офіс в центральній частині
+                  міста по вул. Мазепи 35 в новобудові з чудовим панорамним
+                  виглядом на м. Івано-Франківськ. Площа 209.6 м2 розташований
+                  на 11-тому поверсі є окремий вхід та власний ліфт до офісу, а
+                  також до загальної площі додається гаражний бокс площою 23м2.
+                  Зроблено ремонт в стилі LOFT. Приміщення має сім кабінетів та
+                  приймальню, окремо санвузол та кухню. Поруч розгалужена
+                  інфраструктура міста: магазини, школи, дитсатки, зручне
+                  транспортне сполучення. На території будинку є власна
+                  парковка. Приміщення з вітражними вікнами та двома великими
+                  терасами площею 27,9м2 та 28 м2 з яких видно мальовничі
+                  пейзажі міського озера так і ратушу.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="overlay"></div>
       </section>
-      <!-- <section class="slider">
-        <div class="container">
-          <div class="swiper mySwiper2 slider-gallery__big">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide slider-gallery__big-slide">
-                <img src="images/slider/slide-bild-big-1.jpg" />
-              </div>
-              <div class="swiper-slide slider-gallery__big-slide">
-                <img src="images/slider/slide-bild-big-3.jpg" />
-              </div>
-              <div class="swiper-slide slider-gallery__big-slide">
-                <img src="images/slider/slide-bild-big-3.jpg" />
-              </div>
-              <div class="swiper-slide slider-gallery__big-slide">
-                <img src="images/slider/slide-bild-big-4.jpg" />
-              </div>
-              <div class="swiper-slide slider-gallery__big-slide">
-                <img src="images/slider/slide-bild-big-5.jpg" />
-              </div>
-              <div class="swiper-slide slider-gallery__big-slide">
-                <img src="images/slider/slide-bild-big-6.jpg" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button slider-gallery__button">
-            <div class="slider-gallery__button-next">
-              <img src="images/icon/angle-right.svg" alt="" />
-            </div>
-            <div class="slider-gallery__button-prev">
-              <img src="images/icon/angle-left.svg" alt="" />
-            </div>
-          </div>
-          <div thumbsSlider="" class="swiper slider-gallery__small">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide slider-gallery__small-slide">
-                <img src="images/slider/slide-bild-big-1.jpg" />
-              </div>
-              <div class="swiper-slide slider-gallery__small-slide">
-                <img src="images/slider/slide-bild-big-2.jpg" />
-              </div>
-              <div class="swiper-slide slider-gallery__small-slide">
-                <img src="images/slider/slide-bild-big-3.jpg" />
-              </div>
-              <div class="swiper-slide slider-gallery__small-slide">
-                <img src="images/slider/slide-bild-big-4.jpg" />
-              </div>
-              <div class="swiper-slide slider-gallery__small-slide">
-                <img src="images/slider/slide-bild-big-5.jpg" />
-              </div>
-              <div class="swiper-slide slider-gallery__small-slide">
-                <img src="images/slider/slide-bild-big-6.jpg" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
     </main>
 
     <footer class="footer">
