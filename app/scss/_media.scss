@@ -8,6 +8,19 @@
       margin: 0 10px 100px;
     }
   }
+
+  .popup {
+    &__content {
+      width: 800px;
+      height: 500px;
+    }
+  }
+
+  .slider-modal {
+    width: 600px;
+    margin: 0 auto;
+    padding: 0 0 50px;
+  }
 }
 
 @media (max-width: 1230px) {
@@ -127,6 +140,9 @@
   .intro--estate {
     height: 325px;
   }
+  .intro--details {
+    height: 250px;
+  }
 
   .cards__wrap {
     top: -180px;
@@ -173,9 +189,9 @@
     }
   }
 
-  .video__block {
-    height: 450px;
-  }
+  // .video__block {
+  //   height: 450px;
+  // }
 
   .footer {
     &__title {
@@ -284,6 +300,32 @@
   .footer--estate {
     padding: 50px 0;
   }
+
+  .popup {
+    &__content {
+      width: 500px;
+      height: 350px;
+      padding: 20px;
+    }
+    &-close {
+      top: 2px;
+      right: 2px;
+    }
+  }
+
+  .slider {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+  .slider-modal {
+    width: 88%;
+    padding: 0;
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      display: none;
+    }
+  }
 }
 
 // @media (max-width: 800px) {
@@ -310,7 +352,12 @@
       }
     }
   }
-
+  .intro--details {
+    height: 150px;
+    .intro__top {
+      padding: 50px 0;
+    }
+  }
   .intro {
     &__content {
       padding: 150px 0 0;
@@ -335,7 +382,7 @@
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 630px) {
   .header {
     &__wrap {
       flex-direction: column;
@@ -375,6 +422,7 @@
   }
 
   .cards__wrap {
+    margin-bottom: -150px;
     &::before, 
     &::after {
       display: none;
@@ -382,14 +430,20 @@
   }
 
   .video {
-    padding-top: 350px;
-    //margin-bottom: -345px;
+    padding-top: 0;
+    margin-bottom: 0;
     &--construction {
       padding-top: 0;
     }
+    &__title {
+      margin-bottom: 10px;
+    }
   }
   .video__block {
-    height: 400px;
+    height: 150px;
+    img {
+      display: none;
+    }
   }
 
   .info-construction__card {
@@ -412,11 +466,14 @@
       height: 400px;
     }
   }
+
+  .footer {
+    padding: 100px 0;
+  }
 }
 
 @media (max-width: 500px) {
   .footer {
-    padding: 310px 0 35px;
     &__title {
       margin-bottom: 20px;
     }
@@ -441,9 +498,15 @@
     height: 300px;
   }
   
-  .video__block {
-    height: 320px;
-    margin-bottom: 100px;
+  .popup {
+    &__content {
+      width: 350px;
+      height: 250px;
+      padding: 0;
+    }
+    &-close {
+      display: none;
+    }
   }
 }
 

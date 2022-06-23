@@ -10,6 +10,7 @@
 @import 'real-estate';
 @import 'agency';
 @import 'details';
+@import 'about';
 
 .header {
   padding: 75px 0 70px;
@@ -208,7 +209,7 @@ ul {
     height: 10px;
     width: 1280px;
     box-shadow: 0px 44px 68px 0px rgba(0, 0, 0, 0.1), 0px 11px 111px 0px rgba(0, 0, 0, 0.4);
-    z-index: 5;
+    z-index: 4;
   }
   &__content {
     padding: 210px 0 0 82px;
@@ -270,12 +271,33 @@ ul {
     }
   }
 }
-.intro--agency {
+.intro--agency,
+.intro--about {
   height: 235px;
   background-image: none;
+  // .intro__top {
+  //   &-title::before {
+  //     background-image: url(../images/icon/intro-agency-logo.png);
+  //     width: 59px;
+  //     height: 55px;
+  //   }
+  // }
+}
+
+
+.intro--agency {
   .intro__top {
     &-title::before {
       background-image: url(../images/icon/intro-agency-logo.png);
+      width: 59px;
+      height: 55px;
+    }
+  }
+}
+.intro--about {
+  .intro__top {
+    &-title::before {
+      background-image: url(../images/icon/intro-about-logo.png);
       width: 59px;
       height: 55px;
     }
@@ -459,17 +481,41 @@ ul {
   }
 }
 .video__block {
-  background-color: #30353c;
+  //background-color: #30353c;
   position: relative;
-  z-index: 5;
-  // max-width: 1200px;
-  // height: 720px;
-  // width: 100%;
-  // margin: 0 auto;
-  // iframe {
-  //   width: 100%;
-  //   height: 100%;
-  // }
+  z-index: 11;
+  box-shadow: 0px 11px 111px 0px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+  &:hover {
+    box-shadow: 0px 44px 68px 0px rgba(0, 0, 0, 0.4), 0px 11px 111px 0px rgba(0, 0, 0, 0.8);
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+      position: relative;
+        z-index: 15;
+  }
+  &-popup-open {
+    width: 142px;
+    height: 101px;
+    background-color: rgb(205, 32, 31);
+    border-radius: 17px;
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &::after {
+      content: '';
+      background-color: #fff;
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+      width: 38px;
+      height: 40px;
+    }
+  }
 }
 
 .video--construction,
@@ -593,16 +639,18 @@ ul {
   }
 }
 .slider-modal {
-height: 800px;
-  width: 1120px;
+  height: 85%;
+  width: 80%;
   overflow: hidden;
   margin: 0 auto;
   padding: 0 150px 50px;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 1;
-  // &__wrap {
-  //   position: relative;
-  // }
   &__slide {
     display: flex;
     justify-content: center;
@@ -625,10 +673,6 @@ height: 800px;
     margin: 0 15px;
   }
 }
-
-
-
-
 
 .gallery-slider__big {
   width: 570px;
@@ -693,7 +737,6 @@ height: 800px;
 }
 
 
-
 .popup {
   position: fixed;
   z-index: 15;
@@ -701,7 +744,6 @@ height: 800px;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: all 0.4s linear;
-
   &__body {
     min-height: 100%;
     display: flex;
@@ -709,7 +751,6 @@ height: 800px;
     align-items: center;
     padding: 30px 10px;
   }
-
   &__content {
     background-color: #fff;
     padding: 50px;
@@ -722,17 +763,16 @@ height: 800px;
       height: 100%;
     }
   }
-
   &-active {
     transform: translate(-50%, -50%) scale(1);
   }
-
   &-close {
     position: absolute;
     top: 15px;
     right: 15px;
   }
 }
+
 
 .overlay {
   opacity: 0;

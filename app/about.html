@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewHome about-page</title>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <a href="#" class="header__logo">
+            <img src="images/Logo.png" alt="" />
+          </a>
+          <div class="header__content">
+            <form
+              class="header__form"
+              action="https://jsonplaceholder.typicode.com/users"
+              autocomplete
+              method="post"
+            >
+              <input
+                type="text"
+                class="header__form-input"
+                name="search"
+                placeholder="Пошук..."
+              />
+              <button class="header__form-btn" type="submit">Пошук</button>
+            </form>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="index.html" class="header__menu-link">Головна</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="construction.html" class="header__menu-link"
+                    >Будівництво</a
+                  >
+
+                  <ul class="header__submenu">
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Квартал Парковий"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Київський"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a
+                        href="construction.html"
+                        class="header__submenu-link header__submenu-link--active"
+                      >
+                        ЖК "Садовий"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link"> ЖК "Вектор" </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Перспектива"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Перспектива Хол"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link"> ЖК "Тріумф" </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header__menu-item">
+                  <a
+                    href="real-estate.html"
+                    class="header__menu-link header__menu-link--active"
+                    >Комерційна нерухомість</a
+                  >
+                  <ul class="header__submenu">
+                    <li class="header__submenu-item">
+                      <a
+                        href="real-estate.html"
+                        class="header__submenu-link header__submenu-link--active"
+                      >
+                        Комерцiйна нерухомiсть
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        Житлова Нерухомicть
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link"> ЖК "Вектор" </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Перспектива"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Перспектива Хол"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link"> ЖК "Тріумф" </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Пурпурові вітрила"
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Агенство нерухомості</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Про нас</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Контакти</a>
+                </li>
+              </ul>
+              <button class="header__menu-close"></button>
+            </nav>
+            <button class="burger-btn">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="intro intro--about">
+        <div class="intro__top">
+          <div class="container">
+            <h2 class="intro__top-title">Про Нас</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="video video--details">
+        <div class="container">
+          <h1 class="video__title">
+            Ми Збудуємо Вам Дім <br />
+            <span>і Посадимо Дерево.</span>
+          </h1>
+          <div class="video__subtitle">Живіть в Добробуті і Злагоді.</div>
+          <div class="video__block popup-item">
+            <img src="images/video-block-home.jpg" alt="" />
+            <a class="video__block-popup-open popup-open" href="#"> </a>
+            <div class="popup">
+              <div class="popup__body">
+                <div class="popup__content">
+                  <iframe
+                    src="https://www.youtube.com/embed/2uZPWtIKCfw"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <a href="#" class="popup-close">
+                    <img src="images/icon/close-black.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <h3 class="footer__title">Контактна Інформація</h3>
+        <div class="footer__content">
+          <div class="footer__content-item">
+            <a
+              href="#"
+              class="footer__content-info footer__content-info--address"
+              >08292 м.Буча, вул. Катерини Білокур 1-а. оф.1.</a
+            >
+            <div class="footer__content-info footer__content-info--num">
+              <a href="#" class="footer__content-phone">(067) 72-98-66</a>
+              <a href="#" class="footer__content-phone">(0342) 72-98-66</a>
+            </div>
+            <a href="#" class="footer__content-info footer__content-info--email"
+              >noviydim@gmail.com</a
+            >
+          </div>
+          <div class="footer__content-item">
+            <a
+              href="#"
+              class="footer__content-info footer__content-info--address"
+              >м.Обухів, територія мікрорайону №3</a
+            >
+            <div class="footer__content-info footer__content-info--num">
+              <a href="#" class="footer__content-phone">(067) 72-98-66</a>
+            </div>
+            <a href="#" class="footer__content-info footer__content-info--email"
+              >noviydim@gmail.com</a
+            >
+          </div>
+          <div class="footer__content-item">
+            <a
+              href="#"
+              class="footer__content-info footer__content-info--address"
+              >м. Івано-франківськ, вул. Мазепи, 35.</a
+            >
+            <div class="footer__content-info footer__content-info--num">
+              <a href="#" class="footer__content-phone">(050) 432-27-27</a>
+              <a href="#" class="footer__content-phone">(096) 432-27-27</a>
+            </div>
+            <a href="#" class="footer__content-info footer__content-info--email"
+              >noviydim@gmail.com</a
+            >
+          </div>
+        </div>
+
+        <div class="footer__copyright">
+          <a href="#" class="footer__copyright-logo">
+            <img src="images/Logo-footer.png" alt="" />
+          </a>
+          <div class="footer__copyright-text">
+            <span>Новий Дім</span> © 2016 | Усі Права Захищені.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
