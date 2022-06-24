@@ -37,6 +37,15 @@
   .features__item-subtitle {
     margin: 10px 0 40px;
   }
+  .features__item-img {
+    position: relative;
+    .search-btn {
+      display: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 .features__item-grid {
