@@ -18,15 +18,15 @@ document.querySelectorAll('.gallery__item-slider').forEach(n => {
       loop: true,
       freeMode: true,
       watchSlidesProgress: true, 
-
       navigation: {
         nextEl: '.gallery-slider__button-next',
         prevEl: '.gallery-slider__button-prev',
       },  
+
   });
 
   const slider = new Swiper(n.querySelector('.gallery-slider__big'), {
-    spaceBetween: 20,
+      spaceBetween: 20,
       slidesPerView: 1,
       loop: true,
   });
