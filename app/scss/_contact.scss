@@ -9,20 +9,25 @@
   padding: 100px 0 10px;
   &__item {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 100px;
   }
 }
 
 .contact__item-info {
   max-width: 320px;
+  width: 100%;
+  margin: 0 10px;
+  &--map {
+    max-width: 350px;
+  }
   &__title {
     margin-bottom: 50px;
     span {
       display: block;
       color: #2692f6;
-      font-size: 30px;
-      line-height: 35px;
+      // font-size: 30px;
+      // line-height: 35px;
     }
   }
 }
