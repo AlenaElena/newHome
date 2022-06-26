@@ -11,6 +11,7 @@
 @import 'agency';
 @import 'details';
 @import 'about';
+@import 'contact';
 
 .header {
   padding: 75px 0 70px;
@@ -272,18 +273,11 @@ ul {
   }
 }
 .intro--agency,
-.intro--about {
+.intro--about,
+.intro--contact {
   height: 235px;
   background-image: none;
-  // .intro__top {
-  //   &-title::before {
-  //     background-image: url(../images/icon/intro-agency-logo.png);
-  //     width: 59px;
-  //     height: 55px;
-  //   }
-  // }
 }
-
 
 .intro--agency {
   .intro__top {
@@ -303,7 +297,15 @@ ul {
     }
   }
 }
-
+.intro--contact {
+  .intro__top {
+    &-title::before {
+      background-image: url(../images/icon/intro-contact-logo.png);
+      width: 61px;
+      height: 39px;
+    }
+  }  
+}
 
 
 .breadcrumbs {
