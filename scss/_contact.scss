@@ -1,0 +1,61 @@
+@import 'vars';
+@import 'fonts';
+@import 'global';
+@import 'reset';
+@import 'libs';
+
+
+.contact {
+  padding: 100px 0 10px;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+}
+
+.contact__item-info {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 10px;
+  &--map {
+    max-width: 350px;
+  }
+  &__title {
+    margin-bottom: 50px;
+    span {
+      display: block;
+      color: #2692f6;
+      // font-size: 30px;
+      // line-height: 35px;
+    }
+  }
+}
+.contact__item-list {
+  &__content {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      path {
+        fill: #9dfa08;
+      }
+    }
+  }
+  &__link {
+    padding-left: 20px;
+    color: #cdcdcd;
+    @extend %robotoCondensed-700;
+    &--phone {
+      @extend %PTSerif-700;
+      font-size: 30px;
+      color: $default-color1;
+      line-height: 30px;
+    }
+  }
+}
+
+
+
+@import 'media';

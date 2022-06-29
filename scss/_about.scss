@@ -1,0 +1,113 @@
+@import 'vars';
+@import 'fonts';
+@import 'global';
+@import 'reset';
+@import 'libs';
+
+
+
+
+.about {
+  padding: 90px 0 10px;
+  &__wrap {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__col {
+    flex-basis: 540px;
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
+}
+.about__item-img {
+  border: 21px solid #fff;
+  background-color: rgb(243, 243, 243);
+  box-shadow: 0px 7px 68px 0px rgba(53, 57, 64, 0.2);
+  position: relative;
+  width: 100%;
+  max-width: 487px;
+  height: 385px;
+  margin-bottom: 80px;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: #dfdfe0;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 2px;
+    z-index: 1;
+  }
+  &::before {
+    transform: translate(-50%, -50%) rotate(50deg);
+  }
+  &::after {
+    transform: translate(-50%, -50%) rotate(-50deg);
+  }
+}
+.about__item {
+  margin-bottom: 80px;
+  &-title {
+    margin-bottom: 50px;
+  }
+  &-list {
+    margin-bottom: 30px;
+    &__info {
+      padding-left: 23px;
+      position: relative;
+      padding-bottom: 10px;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        top: 5px;
+        left: 0;
+        background-color: #373b42;
+      }
+    }
+  }
+  &-count-list {
+    &__info {
+      counter-increment: my-counter;
+      position: relative;
+      padding-left: 200px;
+      margin-bottom: 60px;
+      &::after {
+        content: "" counter(my-counter);
+        position: absolute;
+        left: 85px;
+        top: 0;
+        color: $default-color1;
+        @extend %PTSerif-700;
+        font-size: 150px;
+        line-height: 120px;
+      }
+      &::before {
+        content: '0';
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #f3f3f3;
+        @extend %PTSerif-700;
+        font-size: 150px;
+        line-height: 120px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+@import 'media';
+
+
+
+

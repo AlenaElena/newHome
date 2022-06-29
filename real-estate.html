@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewHome real-estate-page</title>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <a href="#" class="header__logo">
+            <img src="images/Logo.png" alt="" />
+          </a>
+          <div class="header__content">
+            <form
+              class="header__form"
+              action="https://jsonplaceholder.typicode.com/users"
+              autocomplete
+              method="post"
+            >
+              <input
+                type="text"
+                class="header__form-input"
+                name="search"
+                placeholder="Пошук..."
+              />
+              <button class="header__form-btn" type="submit">Пошук</button>
+            </form>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="index.html" class="header__menu-link">Головна</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="construction.html" class="header__menu-link"
+                    >Будівництво</a
+                  >
+
+                  <ul class="header__submenu">
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Квартал Парковий"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Київський"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a
+                        href="construction.html"
+                        class="header__submenu-link header__submenu-link--active"
+                      >
+                        ЖК "Садовий"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link"> ЖК "Вектор" </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Перспектива"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link">
+                        ЖК "Перспектива Хол"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="#" class="header__submenu-link"> ЖК "Тріумф" </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header__menu-item">
+                  <a
+                    href="#"
+                    class="header__menu-link header__menu-link--active"
+                    >Комерційна нерухомість</a
+                  >
+                  <ul class="header__submenu">
+                    <li class="header__submenu-item">
+                      <a
+                        href="details.html"
+                        class="header__submenu-link header__submenu-link--active"
+                      >
+                        Комерцiйна нерухомiсть
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="details.html" class="header__submenu-link">
+                        Житлова Нерухомicть
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="details.html" class="header__submenu-link">
+                        ЖК "Вектор"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="details.html" class="header__submenu-link">
+                        ЖК "Перспектива"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="details.html" class="header__submenu-link">
+                        ЖК "Перспектива Хол"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="details.html" class="header__submenu-link">
+                        ЖК "Тріумф"
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a href="details.html" class="header__submenu-link">
+                        ЖК "Пурпурові вітрила"
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__menu-item">
+                  <a href="agency.html" class="header__menu-link"
+                    >Агенство нерухомості</a
+                  >
+                </li>
+                <li class="header__menu-item">
+                  <a href="about.html" class="header__menu-link">Про нас</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="contact.html" class="header__menu-link">Контакти</a>
+                </li>
+              </ul>
+              <button class="header__menu-close"></button>
+            </nav>
+            <button class="burger-btn">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="intro intro--estate">
+        <div class="intro__top">
+          <div class="container">
+            <h2 class="intro__top-title">Комерцiйна Нерухомiсть</h2>
+          </div>
+        </div>
+        <div class="breadcrumbs">
+          <div class="container">
+            <div class="breadcrumbs__items">
+              <a
+                href="#"
+                class="breadcrumbs__items-item breadcrumbs__items-item--active"
+                >Комерцiйна нерухомiсть</a
+              >
+              <a href="#" class="breadcrumbs__items-item"
+                >Житлова Нерухомicть
+              </a>
+              <a href="#" class="breadcrumbs__items-item"
+                >Переглянути усе разом</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="estate-cards">
+        <div class="container">
+          <div class="estate-cards__wrap">
+            <div class="estate-cards__item">
+              <div class="estate-cards__item-img">
+                <img src="images/card-img/card-estate-1.jpg" alt="" />
+              </div>
+              <h4 class="estate-cards__item-title">ЖБ «Перспектива Хол»</h4>
+              <h6 class="estate-cards__item-address">
+                м. Івано-Франківськ, вул  Зілізнична, 49
+              </h6>
+              <ul class="estate-cards__item-list">
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    Цокольне приміщення -93,7 м2, 154,5 м2
+                  </p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    Перший поверх - 101,5 м2,146,5 м2
+                  </p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    Другий поверх - 108,3 м2, 122,5 м2
+                  </p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">Типовий поверх :</p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    двокімнатні - 63,10м2, 66,8м2
+                  </p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">трикімнатні -87,10м2</p>
+                </li>
+              </ul>
+              <a href="#" class="estate-cards__item-link button">Детальніше</a>
+            </div>
+            <div class="estate-cards__item">
+              <div class="estate-cards__item-img">
+                <img src="images/card-img/card-estate-2.jpg" alt="" />
+              </div>
+              <h4 class="estate-cards__item-title">ЖК «Перспектива»</h4>
+              <h6 class="estate-cards__item-address">
+                м. Івано-Франківськ, вул. Зілізнична, 49
+              </h6>
+              <ul class="estate-cards__item-list">
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    Цокольне приміщення -133,1 м2, 136,9 м2
+                  </p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">Типовий поверх :</p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    Мансарда дворівнева - 115,30м2
+                  </p>
+                </li>
+              </ul>
+              <a href="#" class="estate-cards__item-link button">Детальніше</a>
+            </div>
+            <div class="estate-cards__item">
+              <div class="estate-cards__item-img">
+                <img src="images/card-img/card-estate-3.jpg" alt="" />
+              </div>
+              <h4 class="estate-cards__item-title">ЖК «Тріумф»»</h4>
+              <h6 class="estate-cards__item-address">
+                м. Івано-Франківськ, вул. Мазепи, 35
+              </h6>
+              <ul class="estate-cards__item-list">
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    Цокольне приміщення - 286,2 м2
+                  </p>
+                </li>
+              </ul>
+              <a href="#" class="estate-cards__item-link button">Детальніше</a>
+            </div>
+            <div class="estate-cards__item">
+              <div class="estate-cards__item-img">
+                <img src="images/card-img/card-estate-4.jpg" alt="" />
+              </div>
+              <h4 class="estate-cards__item-title">ЖБ ЖК «Вектор»</h4>
+              <h6 class="estate-cards__item-address">
+                м. Івано-Франківськ, вул. Новгородська, буд. 25
+              </h6>
+              <ul class="estate-cards__item-list">
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    Цокольне приміщення -102,8 м2
+                  </p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    Перший поверх - 124,8 м2
+                  </p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    Другий поверх - 27,0 м2, 128,6 м2
+                  </p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">Мансарда:</p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    трикімнатні -102,3м2, 135,9м2
+                  </p>
+                </li>
+              </ul>
+              <a href="#" class="estate-cards__item-link button">Детальніше</a>
+            </div>
+            <div class="estate-cards__item">
+              <div class="estate-cards__item-img">
+                <img src="images/card-img/card-estate-5.jpg" alt="" />
+              </div>
+              <h4 class="estate-cards__item-title">ЖК «Пурпурові вітрила» </h4>
+              <h6 class="estate-cards__item-address">
+                м. Буча, Київська обл.вул. Катерини Білокур 1-а
+              </h6>
+              <ul class="estate-cards__item-list">
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    Цокольне приміщення -93,7 м2, 154,5 м2
+                  </p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    Перший поверх - 101,5 м2,146,5 м2
+                  </p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    Другий поверх - 108,3 м2, 122,5 м2
+                  </p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">Типовий поверх :</p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">
+                    двокімнатні - 63,10м2, 66,8м2
+                  </p>
+                </li>
+                <li class="estate-cards__item-inner">
+                  <p class="estate-cards__item-text">трикімнатні -87,10м2</p>
+                </li>
+              </ul>
+              <a href="#" class="estate-cards__item-link button">Детальніше</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer--estate">
+      <div class="container">
+        <h3 class="footer__title">Контактна Інформація</h3>
+        <div class="footer__content">
+          <div class="footer__content-item">
+            <a
+              href="#"
+              class="footer__content-info footer__content-info--address"
+              >08292 м.Буча, вул. Катерини Білокур 1-а. оф.1.</a
+            >
+            <div class="footer__content-info footer__content-info--num">
+              <a href="#" class="footer__content-phone">(067) 72-98-66</a>
+              <a href="#" class="footer__content-phone">(0342) 72-98-66</a>
+            </div>
+            <a href="#" class="footer__content-info footer__content-info--email"
+              >noviydim@gmail.com</a
+            >
+          </div>
+          <div class="footer__content-item">
+            <a
+              href="#"
+              class="footer__content-info footer__content-info--address"
+              >м.Обухів, територія мікрорайону №3</a
+            >
+            <div class="footer__content-info footer__content-info--num">
+              <a href="#" class="footer__content-phone">(067) 72-98-66</a>
+            </div>
+            <a href="#" class="footer__content-info footer__content-info--email"
+              >noviydim@gmail.com</a
+            >
+          </div>
+          <div class="footer__content-item">
+            <a
+              href="#"
+              class="footer__content-info footer__content-info--address"
+              >м. Івано-франківськ, вул. Мазепи, 35.</a
+            >
+            <div class="footer__content-info footer__content-info--num">
+              <a href="#" class="footer__content-phone">(050) 432-27-27</a>
+              <a href="#" class="footer__content-phone">(096) 432-27-27</a>
+            </div>
+            <a href="#" class="footer__content-info footer__content-info--email"
+              >noviydim@gmail.com</a
+            >
+          </div>
+        </div>
+
+        <div class="footer__copyright">
+          <a href="#" class="footer__copyright-logo">
+            <img src="images/Logo-footer.png" alt="" />
+          </a>
+          <div class="footer__copyright-text">
+            <span>Новий Дім</span> © 2016 | Усі Права Захищені.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+@import 'vars';
+@import 'fonts';
+@import 'global';
+@import 'reset';
+@import 'libs';
+
+
+
+.info-construction {
+  position: relative;
+  top: -100px;
+  &__cards {
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 70px;
+      margin-bottom: 110px;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -90px;
+        right: 200px;
+        width: 6px;
+        height: 69px;
+        background-color: $accent-color;
+      }
+      &:last-child {
+        margin-bottom: 0;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.info-construction__card {
+  width: 100%;
+  border: 21px solid #fff;
+  background-color: rgb(243, 243, 243);
+  box-shadow: 0px 7px 68px 0px rgba(53, 57, 64, 0.2);
+  max-width: 487px;
+  height: 385px;
+  position: relative;
+  margin-left: 10px;
+  transition: all 0.5s;
+  &-search {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  img {
+    height: 100%;
+  }
+  &--empty {
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: #dfdfe0;
+      top: 50%;
+      left: 50%;
+      height: 400px;
+      width: 2px;
+      z-index: 1;
+    }
+    &::before {
+      transform: translate(-50%, -50%) rotate(50deg);
+    }
+    &::after {
+      transform: translate(-50%, -50%) rotate(-50deg);
+    }
+  }
+  &--rightLine::after {
+    content: '';
+    position: absolute;
+    bottom: 125px;
+    left: 100%;
+    transform: translateX(100%);
+    background-color: $accent-color;
+    width: 69px;
+    height: 6px;
+  }
+  &:first-child::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 158px;
+    background-color: $accent-color;
+    top: -260px;
+    left: 160px;
+  }
+  &:hover {
+    box-shadow: 0px 44px 68px 0px rgba(0, 0, 0, 0.2), 0px 11px 111px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+.info-construction__item {
+  max-width: 570px;
+  padding: 0 40px;
+  &-title {
+    span {
+      color: #f54848;
+      display: block;
+    }
+  }
+  &-subtitle {
+    margin: 10px 0 40px;
+  }
+  &-btn {
+    padding: 25px 35px;
+  }
+}
+
+.map {
+  box-shadow: 0px 44px 68px 0px rgba(0, 0, 0, 0.08);
+  background-color: rgba(63, 70, 77, 0.2);
+  &__wrap {
+    position: relative;
+  }
+}
+.map__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1323px;
+  height: 316px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(243, 243, 243, 0.8);
+  box-shadow: 0px 44px 68px 0px rgba(0, 0, 0, 0.11);
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/short-line.jpg);
+    height: 10px;
+    width: 1265px;
+    box-shadow: 0px 44px 68px 0px rgba(0, 0, 0, 0.1), 0px 11px 111px 0px rgba(0, 0, 0, 0.4);
+  }
+}
+.map__content {
+  iframe {
+    width: 100%;
+    height: 865px;
+  }
+}
+
+
+.features {
+  padding: 90px 0 10px;
+  &__items {
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.features__item {
+  width: 50%;
+  max-width: 550px;
+  margin-bottom: 90px;
+  &:nth-child(odd) {
+    margin-right: 10px;
+  }
+  &-list {
+    margin-top: 30px;
+  }
+  &-index {
+    @extend %robotoCondensed-700;
+    font-size: 15px;
+    color: #cdcdcd;
+    text-transform: uppercase;
+    &__title {
+      padding-left: 20px;
+      color: $accent-color;
+      line-height: 35px;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        background-color: #363a41;
+        border-radius: 50%;
+      }
+    }
+  }
+  &-descr {
+    margin-top: 30px;
+  }
+  &-img {
+    //padding-bottom: 20px;
+    margin-top: 30px;
+  }
+  &-popup {
+    display: flex;
+    align-items: center;
+    margin-top: 75px;
+    position: relative;
+    &__text {
+      padding-left: 90px;
+      @extend %robotoCondensed-700;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+
+
+
+
+
+@import 'media';
+
+
+
+       
+        
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

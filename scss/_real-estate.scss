@@ -1,0 +1,44 @@
+@import 'vars';
+@import 'fonts';
+@import 'global';
+@import 'reset';
+@import 'libs';
+
+
+.estate-cards {
+  padding: 100px 20px;
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+  &__item {
+    max-width: 380px;
+    margin: 0 20px 100px;
+    &-img {
+      border: 21px solid #fff;
+      box-shadow: 0px 7px 68px 0px rgba(53, 57, 64, 0.2);
+      margin-bottom: 35px;
+      img {
+        height: 258px;
+        width: 335px;
+      }
+    }
+    &-list {
+      margin: 25px 0 30px;
+    }
+    &-inner {
+      padding: 3px 0;
+    }
+    &-link {
+      padding: 26px 33px;
+      max-width: 150px
+    }
+  }
+}
+ 
+                 
+
+
+
+@import 'media';
