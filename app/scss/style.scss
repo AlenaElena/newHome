@@ -68,9 +68,9 @@
   &-item {
     margin-left: 35px;
     &:hover .header__submenu {
-      // opacity: 1;
-      // visibility: visible;
+
       transform: scaleY(1);
+     
     }
     &:first-child {
       margin-left: 0;
@@ -559,7 +559,9 @@ ul {
     margin-bottom: 100px;
   }
 }
-.footer--estate {
+.footer--estate,
+.footer--contact,
+.footer--agency {
   padding: 100px 0 150px;
 }
 .footer__content {

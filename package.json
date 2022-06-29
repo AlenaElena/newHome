@@ -4,11 +4,13 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d app"
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://alenaelena.github.io/newHnpome",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
